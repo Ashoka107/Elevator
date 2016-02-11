@@ -14,6 +14,7 @@ public class Floor {
 
     public void floorRequest(int floorbutton) {
 
+
         floorButton.setButton(floorbutton);
         validationOfRequest();
 
@@ -24,6 +25,7 @@ public class Floor {
     private void validationOfRequest() {
         if(floorButton.getFloorButton()> elevator.bottomfloor && floorButton.getFloorButton()<elevator.topfloor)
         {
+            System.out.print("Your request is accepted");
             blinkbutton=true;
             callingElevator();
         }
